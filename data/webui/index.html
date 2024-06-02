@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>LCD1602-I2C Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body onload="connect_onclick()">
+    <div class="container">
+        <h2>LCD1602-I2C Test</h2>
+        <div class="user-input">
+            <input type="text" id="line1" placeholder="Type your message...">
+        </div>
+        <div class="user-input">
+            <input type="text" id="line2" placeholder="Type your message...">
+        </div>
+        <div class="user-input">
+            <button onclick="send_onclick()">Send</button>
+        </div>
+        <div class="sponsor">Sponsored by <a href="https://amazon.com/diyables">DIYables</a></div>
+    </div>
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
+
+</html>
