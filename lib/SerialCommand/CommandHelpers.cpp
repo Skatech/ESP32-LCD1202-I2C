@@ -38,8 +38,8 @@ bool CommandHelpers::printOrUpdateValue(const String& input, const String& name,
 bool CommandHelpers::printOrUpdateValue(const String& input, const String& name, IPAddress& value) {
     const auto offset = getValueOffset(input, name, '=');
     if (offset > name.length()) {
-        value.fromString(input.length() > 0 ? input.substring(offset) : "0.0.0.0");
-        return true;    
+        value.fromString(input.length() ? input.substring(offset) : "0.0.0.0");
+        return true;
     }
     if (getValueOffset(input, name, '?') == input.length()) {
         Serial.println(value);

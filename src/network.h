@@ -10,7 +10,7 @@ bool initNetBIOS(const String& hostname);
 bool initNetwork(const DeviceConfig& config);
 // Initiates connection procedure
 bool beginConnect(const String& ssid, const String& password);
-// Can be called from redefied onConnectionUpdated(bool connected)
+// Can be called from redefined onConnectionUpdated(bool connected)
 void logConnectionStatus(bool connected);
 // Must be called every loop iteration, returns true if connected, otherwise false
 bool watchConnection();
